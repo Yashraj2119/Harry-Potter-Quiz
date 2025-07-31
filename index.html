@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harry Potter Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="Hogwarts Crest.jpg">
+</head>
+<body>
+  <div id="loading-screen">Wizards are arriving...</div>
+
+  <div class="crest-container">
+    <img id="crest" src="Hogwarts Crest.jpg" alt="Hogwarts Crest">
+  </div>
+
+  <div class="container">
+    <h1>Harry Potter Quiz</h1>
+
+    <div id="timer">Time Left: 20s</div>
+    <div id="question">Loading question...</div>
+    <div class="options"></div>
+
+    <button id="nextBtn" style="display:none">Next</button>
+    <button id="restartBtn" style="display:none">Restart</button>
+
+    <div id="result"></div>
+    <div id="house"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
