@@ -1,0 +1,113 @@
+body {
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle, #0c0c0c, #1e1e1e);
+  color: #f9f9f9;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+#loading-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000 center center/cover no-repeat fixed;
+  background-size: cover;
+  z-index: 1000;
+  font-size: 2rem;
+  color: gold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin-top: 60px;
+  padding: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  box-shadow: 0 0 30px #764abc;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #ffc600; }
+  to { text-shadow: 0 0 20px #ff6ec7, 0 0 30px #ff6ec7; }
+}
+
+.options button {
+  display: block;
+  margin: 15px auto;
+  padding: 10px 25px;
+  background: #222;
+  border: 2px solid #fff;
+  color: #f9f9f9;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.options button:hover {
+  background-color: #764abc;
+  transform: scale(1.05);
+}
+
+.options button:active {
+  transform: scale(0.97);
+}
+
+#nextBtn, #restartBtn {
+  padding: 10px 20px;
+  background: #ffc600;
+  border: none;
+  border-radius: 10px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#nextBtn:hover, #restartBtn:hover {
+  background-color: #ffdd33;
+  transform: scale(1.05);
+}
+
+#crest {
+  width: 100px;
+  animation: float 4s ease-in-out infinite;
+  margin-top: 20px;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+#timer {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #ffc600;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+#house {
+  margin-top: 10px;
+  font-style: italic;
+  color: lightblue;
+}
