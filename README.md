@@ -25,5 +25,3 @@ A fun and magical quiz web app inspired by the world of **Harry Potter**, built 
 - **CSS** – Styling and animations
 - **JavaScript** – Game logic and interactivity
 
----
-
